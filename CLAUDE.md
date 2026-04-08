@@ -156,8 +156,18 @@ All project documentation is in Chinese in the `docs/` directory:
 
 ## Git Commit Convention
 
-Format: `type: description`
+格式：`type: 描述`
 
-Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+type包括：
+- `feat` - 新功能
+- `fix` - 修复bug
+- `docs` - 文档更新
+- `style` - 代码格式调整（不影响代码功能）
+- `refactor` - 重构
+- `test` - 测试相关
+- `chore` - 构建/工具/配置变更
 
-Example: `feat: add ScriptParser agent with tests`
+示例：
+- `feat: 添加ScriptParser Agent及单元测试`
+- `fix: 修复数据库连接超时问题`
+- `docs: 更新API文档`
