@@ -7,11 +7,8 @@ sqlmodel==0.0.14
 psycopg2-binary==2.9.9
 alembic==1.13.1
 
-# LLM
-anthropic==0.18.1
-langchain==1.2.15
-langgraph==1.1.6
-langchain-openai==1.1.12
+# LLM - Qwen via DashScope
+dashscope==1.20.0
 
 # Configuration and validation
 pydantic==2.5.3
