@@ -7,6 +7,10 @@ from sqlmodel.ext.asyncio.session import AsyncSession
 
 from app.config import settings
 
+# 导入所有模型以确保SQLModel.metadata包含所有表
+# noqa: F401 - 导入仅用于注册模型
+from app.models import Character, CharacterRelationship, Episode, PerformancePlan, PerformanceStep, Script  # noqa: F401
+
 # 创建异步引擎
 # 将postgresql://替换为postgresql+asyncpg://以支持异步
 async_database_url = settings.database_url.replace(
