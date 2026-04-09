@@ -54,8 +54,8 @@ async def root():
     }
 
 
-# 延迟导入 API 路由（在模型导入之后）
-# TODO: Task 7 添加剧本 API 路由
-# from app.api import scripts, performances
-# app.include_router(scripts.router, prefix="/api/v1", tags=["剧本管理"])
-# app.include_router(performances.router, prefix="/api/v1", tags=["演绎设计"])
+# 导入并注册 API 路由
+from app.api import performances_router, scripts_router
+
+app.include_router(scripts_router, prefix="/api/v1")
+app.include_router(performances_router, prefix="/api/v1")
